@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aryan Gupta | Software Developer</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        catchy: {
+                            bg: '#f7fbff', // ultra light blue tint
+                            surface: '#ffffff', // pure white for cards
+                            border: '#e0f2fe', // sky-100
+                            text: '#475569', // slate-600
+                            heading: '#0f172a', // slate-900
+                            primary: '#6366f1', // vibrant indigo
+                            secondary: '#0ea5e9', // vibrant sky
+                            accent: '#8b5cf6' // vibrant violet
+                        }
+                    },
+                    fontFamily: {
+                        mono: ['"Fira Code"', '"JetBrains Mono"', 'monospace'],
+                        sans: ['Inter', 'sans-serif']
+                    },
+                    boxShadow: {
+                        'soft': '0 10px 40px -10px rgba(0,0,0,0.08)',
+                        'glow': '0 0 20px rgba(99, 102, 241, 0.4)'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- React & Babel -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+    <!-- Icons & Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="antialiased selection:bg-catchy-primary selection:text-white bg-catchy-bg text-catchy-text relative overflow-x-hidden">
+    
+    <!-- Subtle Tech Background with Ultra Light Blue Tint -->
+    <div class="fixed inset-0 pointer-events-none overflow-hidden z-[-1] bg-[#f7fbff]">
+        <!-- Tech Grid Pattern -->
+        <div class="absolute inset-0" style="background-image: linear-gradient(to right, #e0f2fe 1px, transparent 1px), linear-gradient(to bottom, #e0f2fe 1px, transparent 1px); background-size: 50px 50px; mask-image: radial-gradient(ellipse at center, black 20%, transparent 80%); -webkit-mask-image: radial-gradient(ellipse at center, black 20%, transparent 80%); opacity: 0.6;"></div>
+        
+        <!-- Faint Tech Accents -->
+        <div class="absolute top-[-10%] right-[-5%] w-[800px] h-[800px] bg-sky-200/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-[-10%] left-[-5%] w-[800px] h-[800px] bg-blue-200/5 rounded-full blur-3xl"></div>
+    </div>
+    
+    <div id="root"></div>
+    <script type="text/babel" src="app.jsx"></script>
+</body>
+</html>
