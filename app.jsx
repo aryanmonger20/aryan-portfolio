@@ -125,7 +125,7 @@ const About = () => {
                         I am a backend-focused engineer specializing in highly available data platforms and zero-trust security architectures. At <strong className="text-catchy-heading">IBM</strong>, I own the Spark engine lifecycle for Cloud Pak for Data, recently migrating engine API ownership to a service-native architecture to enable zero-downtime provisioning.
                     </p>
                     <p className="mb-6 text-base md:text-lg leading-relaxed text-catchy-text font-medium">
-                        Prior to IBM, I architected data profiling pipelines and slashed ETL job runtimes by ~40% at <strong className="text-catchy-heading">Deloitte</strong>, and optimized critical systems at <strong className="text-catchy-heading">Amazon</strong>. I rely on a strong foundation in <strong className="text-catchy-heading">System Design</strong> and <strong className="text-catchy-heading">Data Structures & Algorithms</strong> to build highly scalable, fault-tolerant solutions.
+                        Prior to IBM, I architected Java-based applications and automated complex Database/ETL pipelines—slashing job runtimes by ~40%—at <strong className="text-catchy-heading">Deloitte</strong>. I also served as a Fullstack Developer at <strong className="text-catchy-heading">Amazon</strong>, optimizing performance for critical enterprise systems. I rely on a strong foundation in <strong className="text-catchy-heading">System Design</strong> and <strong className="text-catchy-heading">Data Structures & Algorithms</strong> to consistently build highly scalable, fault-tolerant solutions.
                     </p>
                     
                     <div className="mt-8 pt-6 border-t border-catchy-border">
