@@ -294,7 +294,7 @@ const Projects = () => {
         {
             title: "We Travel",
             desc: "A social platform tailored for travel enthusiasts to share locations, blogs, and experiences.",
-            tech: ["HTML/CSS", "JavaScript", "Backend"],
+            tech: ["React", "Maps", "Backend"],
             link: "https://fierce-wildwood-24965.herokuapp.com/"
         }
     ];
