@@ -124,9 +124,6 @@ const About = () => {
                     <p className="mb-4 text-base md:text-lg leading-relaxed text-catchy-text font-medium">
                         I am a backend-focused engineer specializing in highly available data platforms and zero-trust security architectures. At <strong className="text-catchy-heading">IBM</strong>, I own the Spark engine lifecycle for Cloud Pak for Data, recently migrating engine API ownership to a service-native architecture to enable zero-downtime provisioning.
                     </p>
-                    <p className="mb-4 text-base md:text-lg leading-relaxed text-catchy-text font-medium">
-                        My expertise lies in dismantling legacy constraints. I successfully eliminated static credentials across our distributed runtime by implementing <strong className="text-catchy-heading">OIDC-based temporary IAM roles</strong> for S3 access, closing major credential leakage vectors. I also actively harden production systems against critical vulnerabilities (e.g., Log4j, XSS).
-                    </p>
                     <p className="mb-6 text-base md:text-lg leading-relaxed text-catchy-text font-medium">
                         Prior to IBM, I architected data profiling pipelines and slashed ETL job runtimes by ~40% at <strong className="text-catchy-heading">Deloitte</strong>, and optimized critical systems at <strong className="text-catchy-heading">Amazon</strong>. I rely on a strong foundation in <strong className="text-catchy-heading">System Design</strong> and <strong className="text-catchy-heading">Data Structures & Algorithms</strong> to build highly scalable, fault-tolerant solutions.
                     </p>
