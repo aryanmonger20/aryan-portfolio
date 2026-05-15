@@ -40,6 +40,7 @@ const Navbar = () => {
                         &lt;AG /&gt;
                     </div>
                     <div className="hidden md:flex items-center space-x-6 font-semibold text-sm text-catchy-text">
+                        <a href="#about" className="hover:text-catchy-primary transition-colors duration-300">About</a>
                         <a href="#experience" className="hover:text-catchy-primary transition-colors duration-300">Experience</a>
                         <a href="#skills" className="hover:text-catchy-primary transition-colors duration-300">Skills</a>
                         <a href="#projects" className="hover:text-catchy-primary transition-colors duration-300">Projects</a>
@@ -56,6 +57,7 @@ const Navbar = () => {
             {mobileMenuOpen && (
                 <div className="md:hidden bg-[#f7fbff]/95 backdrop-blur-md border-b border-catchy-border shadow-md">
                     <div className="px-4 pt-2 pb-6 flex flex-col space-y-4 font-semibold text-catchy-text text-center text-lg">
+                        <a href="#about" onClick={() => setMobileMenuOpen(false)}>About</a>
                         <a href="#experience" onClick={() => setMobileMenuOpen(false)}>Experience</a>
                         <a href="#skills" onClick={() => setMobileMenuOpen(false)}>Skills</a>
                         <a href="#projects" onClick={() => setMobileMenuOpen(false)}>Projects</a>
@@ -97,6 +99,43 @@ const Hero = () => {
                     <a href="https://github.com/aryanmonger20" target="_blank" className="px-8 py-4 bg-[#f4f4f5] text-catchy-heading rounded-full shadow-soft hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex items-center justify-center border border-catchy-border">
                         <i className="fa-brands fa-github mr-2 text-lg"></i> GitHub
                     </a>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+const About = () => {
+    return (
+        <section id="about" className="py-20 relative">
+            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="flex items-center mb-10 reveal-left">
+                    <h2 className="text-3xl md:text-4xl font-extrabold text-catchy-heading flex items-center">
+                        About Me
+                    </h2>
+                    <div className="h-px md:h-1 bg-gradient-custom flex-grow ml-6 rounded-full opacity-20"></div>
+                </div>
+                <div className="glass-card p-6 md:p-8 rounded-2xl reveal relative overflow-hidden">
+                    <div className="absolute top-0 left-0 w-2 h-full bg-gradient-custom"></div>
+                    <p className="mb-4 text-base md:text-lg leading-relaxed text-catchy-text font-medium">
+                        I am a backend-focused engineer specializing in highly available data platforms and zero-trust security architectures. At <strong className="text-catchy-heading">IBM</strong>, I own the Spark engine lifecycle for Cloud Pak for Data, recently migrating engine API ownership to a service-native architecture to enable zero-downtime provisioning.
+                    </p>
+                    <p className="mb-4 text-base md:text-lg leading-relaxed text-catchy-text font-medium">
+                        My expertise lies in dismantling legacy constraints. I successfully eliminated static credentials across our distributed runtime by implementing <strong className="text-catchy-heading">OIDC-based temporary IAM roles</strong> for S3 access, closing major credential leakage vectors. I also actively harden production systems against critical vulnerabilities (e.g., Log4j, XSS).
+                    </p>
+                    <p className="mb-6 text-base md:text-lg leading-relaxed text-catchy-text font-medium">
+                        Prior to IBM, I architected data profiling pipelines and slashed ETL job runtimes by ~40% at <strong className="text-catchy-heading">Deloitte</strong>, and optimized critical systems at <strong className="text-catchy-heading">Amazon</strong>. I rely on a strong foundation in <strong className="text-catchy-heading">System Design</strong> and <strong className="text-catchy-heading">Data Structures & Algorithms</strong> to build highly scalable, fault-tolerant solutions.
+                    </p>
+                    
+                    <div className="mt-8 pt-6 border-t border-catchy-border">
+                        <div className="flex flex-wrap gap-2">
+                            {["Distributed Systems", "Backend APIs", "Kubernetes", "Spark", "Cloud IAM/STS", "Reliability Engineering"].map((strength, i) => (
+                                <span key={i} className="px-3 py-1 bg-catchy-primary/10 text-catchy-primary text-xs md:text-sm font-semibold rounded-md border border-catchy-primary/20">
+                                    {strength}
+                                </span>
+                            ))}
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -371,6 +410,7 @@ const App = () => {
             <Navbar />
             <main className="flex-grow">
                 <Hero />
+                <About />
                 <Experience />
                 <Skills />
                 <Projects />
