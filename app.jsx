@@ -75,29 +75,33 @@ const Hero = () => {
         <section id="hero" className="min-h-[85vh] flex flex-col justify-center relative pt-20">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full text-center md:text-left">
                 <div className="reveal">
+                    <p className="font-tech text-catchy-primary font-bold mb-4 tracking-wide uppercase text-sm">Welcome to my universe</p>
                     <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold text-catchy-heading mb-4 tracking-tight">
                         Aryan Gupta.
                     </h1>
                 </div>
                 <div className="reveal" style={{transitionDelay: '100ms'}}>
                     <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-catchy-primary to-catchy-secondary mb-6 tracking-tight pb-2">
-                        Building highly scalable, resilient distributed systems.
+                        I design and build scalable, resilient distributed systems.
                     </h2>
                 </div>
                 <div className="reveal" style={{transitionDelay: '200ms'}}>
                     <p className="max-w-3xl text-lg md:text-xl mb-10 leading-relaxed text-catchy-text font-medium mx-auto md:mx-0">
-                        <span className="font-bold text-catchy-heading">Software Developer @ IBM Software Labs.</span> Specializing in backend engineering, zero-trust cloud infrastructure, and large-scale data platforms. Previously shipped high-impact architectures at <span className="font-bold text-catchy-heading">Amazon</span> and <span className="font-bold text-catchy-heading">Deloitte</span>.
+                        <span className="font-bold text-catchy-heading">Software Developer @ IBM Software Labs</span> building large-scale distributed data and compute platforms. My work sits at the intersection of backend engineering, frontend development, databases, cloud infrastructure, and security. Previously engineered robust solutions at <span className="font-semibold text-catchy-heading">Amazon</span> and <span className="font-semibold text-catchy-heading">Deloitte</span>.
                     </p>
                 </div>
                 <div className="flex flex-col sm:flex-row flex-wrap gap-4 font-semibold reveal justify-center md:justify-start" style={{transitionDelay: '300ms'}}>
                     <a href="#experience" className="px-8 py-4 bg-gradient-custom text-white rounded-full hover:shadow-soft hover:-translate-y-1 transition-all duration-300 flex items-center justify-center">
-                        <i className="fa-solid fa-rocket mr-2"></i> View Experience
+                        <i className="fa-solid fa-rocket mr-2"></i> Explore My Work
                     </a>
                     <button onClick={(e) => { e.preventDefault(); navigator.clipboard.writeText('aryangg@icloud.com'); alert('Email aryangg@icloud.com copied to your clipboard!'); }} className="px-8 py-4 bg-[#f4f4f5] text-catchy-heading rounded-full shadow-soft hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex items-center justify-center border border-catchy-border">
                         <i className="fa-solid fa-copy mr-2 text-lg text-red-500"></i> My Email
                     </button>
                     <a href="https://github.com/aryanmonger20" target="_blank" className="px-8 py-4 bg-[#f4f4f5] text-catchy-heading rounded-full shadow-soft hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex items-center justify-center border border-catchy-border">
                         <i className="fa-brands fa-github mr-2 text-lg"></i> GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/arynv" target="_blank" className="px-8 py-4 bg-[#f4f4f5] text-catchy-heading rounded-full shadow-soft hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex items-center justify-center border border-catchy-border">
+                        <i className="fa-brands fa-linkedin text-blue-600 mr-2 text-lg"></i> Connect
                     </a>
                 </div>
             </div>
