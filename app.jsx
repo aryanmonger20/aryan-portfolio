@@ -97,9 +97,9 @@ const Hero = () => {
                     <a href="#experience" className="px-8 py-4 bg-gradient-custom text-white rounded-full hover:shadow-soft hover:-translate-y-1 transition-all duration-300 flex items-center justify-center">
                         <i className="fa-solid fa-rocket mr-2"></i> Explore My Work
                     </a>
-                    <a href="mailto:aryangg@icloud.com" className="px-8 py-4 bg-[#f4f4f5] text-catchy-heading rounded-full shadow-soft hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex items-center justify-center border border-catchy-border">
-                        <i className="fa-solid fa-envelope mr-2 text-lg text-red-500"></i> Email Me
-                    </a>
+                    <button onClick={(e) => { e.preventDefault(); navigator.clipboard.writeText('aryangg@icloud.com'); alert('Email aryangg@icloud.com copied to your clipboard!'); }} className="px-8 py-4 bg-[#f4f4f5] text-catchy-heading rounded-full shadow-soft hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex items-center justify-center border border-catchy-border">
+                        <i className="fa-solid fa-copy mr-2 text-lg text-red-500"></i> Copy Email
+                    </button>
                     <a href="https://github.com/aryanmonger20" target="_blank" className="px-8 py-4 bg-[#f4f4f5] text-catchy-heading rounded-full shadow-soft hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex items-center justify-center border border-catchy-border">
                         <i className="fa-brands fa-github mr-2 text-lg"></i> GitHub
                     </a>
